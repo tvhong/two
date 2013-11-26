@@ -1,0 +1,29 @@
+Game?
+    Ping pong
+
+Diff modes
+    Quick play
+    Tournament
+
+Web-based?
+    Nah, we don't like flash
+
+Scope:
+    runnable
+    plug-and-play
+
+Problem definition:
+    Create a ping-pong like game that everyone can play
+
+architecture:
+    Window + Linux
+
+Conventions:
+    naming: capitalizedStyle - save some key strokes
+
+Prog lang:
+    C++
+    Reasons:
+        learn something new
+        it's a deamon
+        fk it, just go with C++
