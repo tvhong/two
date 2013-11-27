@@ -1,0 +1,11 @@
+What library in C++?
+    SFML?
+    OpenGL? - Nope, only graphic
+    WebGL? - wait, it's in javascript
+    
+Should we use javascript instead?
+    Javascript game engines
+    It's possible, but is it good enough?
+
+Next time:
+    Compare C++ & javscript
