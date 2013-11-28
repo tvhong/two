@@ -1,0 +1,32 @@
+Language decision:
+    C++
+    Reason could be we will develop other C++ apps later, this could be a good start
+    Goodbye js, we may see you later. Farewell, friend.
+
+Planning:
+    Estimate project time:
+        ~100 hrs
+        8-10 hrs/week, 2 ppl 16-20 hrs/week
+        roughly 7 weeks
+
+    Prerequisite:
+        Requirement analysis
+        Detailed design
+        Estimate: 1-1.5 weeks
+
+    Construction:
+        might need to add effects
+        Estimate: 4 hrs
+
+    Testing/Debugging:
+        last 2 weeks
+
+    Color and images:
+        Concurrent process
+        Probably start 2 weeks before the end,
+        at the same time or a bit earlier than testing
+
+    Improving gameplay, user interface:
+        We'll do it later, after we finish the game
+        Because we need people help
+        This will come slowly as we improve the game
