@@ -1,0 +1,25 @@
+Timeline (in memo3)
+    checked, will *try to* follow.
+
+Requirements
+    Input: mainly keyboard AND joystick / controller.
+           (V is doomed lol) also customizable.
+           touchscreen considered and crossed.
+           will have lots of keypresses at a time.
+           In game controls will mainly include:
+                  2D movements (up down left right)
+                  Dash
+                  At least 2 special abilities.
+                  Misc. like Pause, Option ...
+
+    Output: screen, speaker .. text output (only for debugging).
+            multiple resolutions: checked.
+            spatialized (2D) sound.
+            controller vibration: not a must but nice to have.
+
+    External Communication: at the moment, no.
+    
+    Input / Output match:
+            Movement: start moving at that direction RIGHT AWAY.
+            Dash: speed up the movement significantly.
+            Special Ability: change the puck / mallet / table ...
