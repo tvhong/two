@@ -16,7 +16,7 @@ Planning:
 
     Construction:
         might need to add effects
-        Estimate: 4 hrs
+        Estimate: 4 weeks
 
     Testing/Debugging:
         last 2 weeks
