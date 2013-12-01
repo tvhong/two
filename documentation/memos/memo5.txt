@@ -1,0 +1,26 @@
+Response Time:
+    Immediately. This-is-a-must. Correctness has lower priority.
+
+Timing considerations:
+    Input reading - might need to process lots of input.
+    AI planning & reacting - smart & fast.
+    (Only with Networking) Data flow timing.
+
+Security:
+    (Only with Networking) Connection's security.
+    User data storage (usual players can't cheat).
+
+Reliability:
+    Failure: ... will try to be fail-safe when released.
+    Information to protect: options, user data like name, level...
+    Strategy to recover: reset user data.
+    Strategy to detect errors: ... we'll see ...
+
+Memory:
+    ... not sure, possibly we'll use 100 - 200MB max
+
+Storage:
+    ... not sure too, will try to reach 20MB download size.
+
+Success:
+    20 stable players ....
