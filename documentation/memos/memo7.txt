@@ -1,0 +1,36 @@
+classes
+    Game
+    World
+    Pucks
+    Mallets
+    Terrain
+    
+Use case: P-hits-Walls
+    3 classes involved: P, Wall and World
+    World check collison every frame, detect and "solve" the impact
+
+Abilities
+    Flag-like count down
+
+The sad fate of Walls and Obstacles :(
+    well, we don't need Wall class, it doesn't have any property
+    Obstacle, sorry dude, u're going to waitlist with the soft-obs thingy
+
+
+Other stuffs:
+    Sound
+    Input
+    Graphic
+
+Where to put Graphic?
+    Inside each class or a separate module
+    A separate module
+    And the Graphic will know about "definitions" of other things that it draw
+
+Win-lose strategy:
+    *normal stars
+    moving stars
+    HP
+
+Coordinate?
+    float coordinates
