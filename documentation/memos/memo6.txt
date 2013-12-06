@@ -1,0 +1,52 @@
+Frontend:
+    Input
+    Graphic
+    Sound, Music
+Backend:
+Storage:
+    Save files
+    Load files
+
+Random stuffs
+    A puck
+        location
+        velocity
+        bounce off the walls
+    2 mallets
+        location
+        hit the pucks
+    2 fields
+        Left-right
+        Terrain
+            Same on 2 sides
+        Obstacles
+            including Walls
+    World
+        physics
+        possibly winds
+    ABSOLUTE corrodinate
+    Stars
+        part of game class?
+    Shadows?
+        Make game more real
+    Dash
+        What when we stop?
+            move a certain dist in the facing direction
+    Mouse input?
+        Speed?
+        Dash?
+        Position feeling?
+    Face?
+        Move right through?
+        Destroy own stars?
+        
+
+Use case - normal game:
+    Open game
+    Play
+    2 players
+    Choose Ms
+    Start game
+    Choose who go first
+
+
