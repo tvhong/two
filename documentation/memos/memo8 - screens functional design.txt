@@ -1,0 +1,37 @@
+Overall program structure:
+
+Single Play
+    pick M (or Customize / Random)
+    pick Field (or Random)
+    pick AI Level (oops..)
+    pick Format (best of ...)
+    infinite mana mode (off by default)
+    infinite time mode (off by default)
+    PLAY
+
+Multi Play
+    pick M (or Customize / Random)
+    pick Field (or Random)
+    pick Format (best of ...)
+    infinite mana mode (off by default)
+    infinite time mode (off by default)
+    PLAY
+
+Option
+    music & audio volumn
+    key mapping
+    resolutions (low priority)
+    graphics quality (low priority)
+
+Ingame
+    Manabar
+    Overall score
+    Timer
+    Ability
+    Field
+        Ms
+        P(s)
+        Wall
+        Star
+        Terrain (background)
+        Obstacles (waitlisted)
