@@ -1,0 +1,25 @@
+Ability events: 
+    onActivated
+    onCollisonP
+    onCollisonM
+
+Possible solutions:
+    Always notify the abilities,
+        and let them maintain their 'activationState'
+    AbilityManager
+
+Have an enum state in M/P for each Ability
+    Deprecated
+    Have an AbilityManager is enough
+
+AbilityManager:
+    An equal being with the World
+    Responsibility: (lol, I can type it)
+        Manage input
+        Update timing
+        Publisher of events, receive events too, of course
+        Giving information to graphic
+
+Tmr:
+    Walk through some use cases
+    Specify interfaces
