@@ -1,0 +1,10 @@
+suggesting classes:
+    ability
+    mana/energy/power
+
+dependencies:
+    ability changes world
+    hitting events in World change Energy
+
+World responsibitilies:
+    Update physicalObject's speed
