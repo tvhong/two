@@ -1,0 +1,70 @@
+#############################################################################
+# Design decisions
+#############################################################################
+Change Game -> MatchScreen
+    Reason:
+        Game class should be used for the whole game,
+        inc. Menu, Option and Match screens
+    Consequences:
+        MatchScreen would serve a more specific purpose
+
+So, we'll have a Game class
+    that contains a number of Screens (Abstract class)
+    there're multiple kinds of Screens: MenuScreen, OptionScreen, MatchScreen
+
+Q: Should we have a separate Graphic class for each screen?
+   Or should we have Graphic just as a helper class, doesn't know anything
+   just know how to draw
+   As an example,
+       Should we have Graphic.drawPuck(Puck p);
+       instead of Graphic.drawPuck(Point center, float radius)
+A: We decided to let Screen knows about their stuffs,
+   and just use graphic as a helper function to draw.
+   That way would decrease the No. of dependencies
+
+Q: Should we let the world draw itself?
+A: MatchScreen could know about PhysicalObjects structures
+   Therefore, we can put drawing in MatchScreen
+   This also make the drawing more consistent, ie. all the screens draw
+
+#############################################################################
+# Use cases
+#############################################################################
+Start a match
+    00. MatchScreen init the variables
+    01. draw the match screen
+    02. coin flip, decide first serve
+    03. P in the middle, count down 3 2 1
+    04. player input, moves M
+    05. screen read input, call World to process the input
+    06. after a few frames, M hits P
+    07. world.update() changes M & P speeds, direction
+    08. P travels, slow down (very) slowly
+    09. P hits a wall, world detects, change direction
+    10. P moves to opponent's field
+
+Score a star:
+    01. P moving toward a Star
+    02. defending M couldn't reach the P in time
+    03. P hits the Star (world detected this)
+    04. World "turn-off" the star
+    05. P continues going
+
+End of game:
+    01. Last star of one side is hit
+    02. MatchScreen realize that there's no star left for this player
+    03. MatchScreen display end of game scene
+    04. MatchScreen change the score
+    05. MatchScreen starts another game if condition permitted
+
+Use an ability:
+    01. stuPlayer press ABILITY1
+    02. Screen passes input to AbilityManager (AM)
+    03. AM check for M.energyPoint, if enough, move one to step 4, else ignore
+    04. AM activate ABILITY, start countdown, change EnergyPoint, stats, could possibly change the world
+    05. Screen draws M, consulting AM
+    06. M hits P, World consults AM and change stuffs (M, P, World)
+            AM.preCollision()
+            World.handleCollision() if (AM.shouldWorldHandleCollision());
+            AM.postCollision()
+    07. Other major World events happen in a similar way
