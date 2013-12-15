@@ -7,42 +7,45 @@
 #include <cstdio>
 #include "style.h"
 
+// Constants are UPPERCASE_WITH_UNDERSCORE
 #define WHAT_THE_HECK -1
 
 /*
- * Call this function and you'll know if I'm happy
+ * This function tell you if I'm happy or not
+ * 
+ * I'm currently always happy, but life is not that simple
+ * This is a known limitation and need to be documented
  *
- * Notice the return type is on one line
  */
+
+// Notice the return type is on one line
 int
 iAmHappy() {
-  return 1; //I'm always happy
+
+  // I'm always happy
+  return 1; // try to AVOID End-line comments line this, put it before this line
 }
 
 
 /*
  * This function run the main program
- * 
  */
 int
 main(int argc, char** argv) {
   printf("This is how we separate
           lines\n");
 
-  // Note there is no space between function name and the bracket
-  // But there's one space after control statements
-  // like if (), while (), etc..
-  // I don't think it's important though...
+  // Opening bracket on the same line as if
   if (iAmHappy()) {
     printf("I'm happy\n");
-  } else { // I like to put else on the same line as the closing brackets
+  } else { // else on the same line as closing bracket '('
     printf("I'm not happy :( \n");
   }
 
-  // And try not to go over 80 chars per line as well, are you ok with that?7980
+  // And try not to go over 80 charactes per line as well, are you ok with that?
   
-  // I think that's enough, damn the styles
+  // TODO: Add more stuffs
 
-  // Damn, this is a freaking ugly file
+  // FIXME: Damn, this is a freaking ugly file
   return 0;
 }
