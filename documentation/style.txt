@@ -1,7 +1,12 @@
 /*
- * This is the freaking header
+ * This is a simple style guide for our own project
+ *
  * Tell me a little more about this program dude
  * Anything else you wanna tell me before I start reading the code?
+ *
+ * When you're in doubt, check this page out:
+ * http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml
+ *
  */
 
 #include <cstdio>
@@ -10,6 +15,28 @@
 // Constants are UPPERCASE_WITH_UNDERSCORE
 #define WHAT_THE_HECK -1
 
+class MyClass : public OtherClass {
+ public:      // Note the 1 space indent!
+  MyClass();  // Regular 2 space indent.
+  explicit MyClass(int var);
+  ~MyClass() {}
+
+  void SomeFunction();
+  void SomeFunctionThatDoesNothing() {
+  }
+
+  void set_some_var(int var) { some_var_ = var; }
+  int some_var() const { return some_var_; }
+
+ private:
+  bool SomeInternalFunction();
+
+  int some_var_; // notice the _ at the end
+  int some_other_var_;
+  DISALLOW_COPY_AND_ASSIGN(MyClass);
+};
+
+
 /*
  * This function tell you if I'm happy or not
  * 
@@ -17,21 +44,17 @@
  * This is a known limitation and need to be documented
  *
  */
-
-// Notice the return type is on one line
-int
-iAmHappy() {
+int iAmHappy() {
 
   // I'm always happy
-  return 1; // try to AVOID End-line comments line this, put it before this line
+  return 1; // try to AVOID End-line comments like this, better put it before
 }
 
 
 /*
  * This function run the main program
  */
-int
-main(int argc, char** argv) {
+int main(int argc, char** argv) {
   printf("This is how we separate
           lines\n");
 

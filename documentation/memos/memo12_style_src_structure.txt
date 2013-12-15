@@ -1,0 +1,19 @@
+Point & Vector class?
+  We can also use pair<> or tuple<> or even array
+  But that isn't clear enough for the purpose
+  So we choose to create Point & Vector classes
+
+We follow Google's C++ style guide
+  Cause it's a good reference
+  And we're beginners
+  We still have a style.txt reference file in case we're lazy
+
+Src folder structure:
+  Game/main file in src
+  abilities one folder
+  world one folder
+  screens one folder
+  graphics one folder
+
+Ideas:
+  PUCK_MIN_SPEED constant
