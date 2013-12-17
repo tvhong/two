@@ -5,6 +5,7 @@
  * Conclusion: The VectorMD imp. seems simpler in most operations
  * However, we can still keep the VectorXY and test
  * which has better performance in a real situation.
+ * (or just screw it for simplicity)
  */
 
 #ifndef TWO_WORLD_VECTOR_H_

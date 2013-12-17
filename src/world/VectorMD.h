@@ -1,12 +1,12 @@
 /*
  * Vector represented in magnitude & direction
  */
-#include "Vector.h"
-#include <cmath>
-#define _USE_MATH_DEFINES
-
 #ifndef TWO_WORLD_VECTORMD_H_
 #define TWO_WORLD_VECTORMD_H_
+#define _USE_MATH_DEFINES
+
+#include "Vector.h"
+#include <cmath>
 
 class VectorMD : Vector {
  public:

@@ -1,11 +1,11 @@
 /*
  * Vector represented in Cartesian coordinate
  */
-#include "Vector.h"
-#include <cmath>
-
 #ifndef TWO_WORLD_VECTORXY_H_
 #define TWO_WORLD_VECTORXY_H_
+
+#include "Vector.h"
+#include <cmath>
 
 class VectorXY : public Vector {
  public:
@@ -32,5 +32,4 @@ class VectorXY : public Vector {
  private:
   double x_, y_;
 };
-
 #endif // TWO_WORLD_VECTORXY_H_
