@@ -1,0 +1,11 @@
+Should Ms have different speed?
+  yes, different players might prefer different speeds
+  but need to be very careful about balancing.
+
+Current M attributes:
+  different speed, size and weight
+
+Physics?
+  complicated, but rewarding & overall better
+  -> decided to follow physics
+

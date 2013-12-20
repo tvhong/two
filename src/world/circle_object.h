@@ -9,7 +9,7 @@
 
 class CircleObject {
  public:
-  virtual Point* center() = 0;
+  virtual Point& center() = 0;
   virtual double radius() = 0;
 };
 #endif

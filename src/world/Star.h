@@ -10,7 +10,7 @@
 class Star : public CircleObject {
  public:
   Star(Point center, double radius);
-  Point* center() { return center_; }
+  Point& center() { return &center_; }
   double radius() { return radius_; }
 
   bool isOn()    { return state; }
@@ -18,7 +18,7 @@ class Star : public CircleObject {
   bool turnOn()  { state=true; }
 
  private:
-  Point* center_;
+  Point center_;
   double radius_;
   bool state;
 }; // Star

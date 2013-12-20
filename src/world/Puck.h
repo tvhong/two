@@ -17,15 +17,15 @@ class Puck : public CircleObject {
 
   Puck(Point center, double radius);
 
-  Point* center() { return center_; }
+  Point& center() { return center_; }
   double radius() { return radius_; }
   double weight() { return weight_; }
-  Vector* speed() { return speed_; }
+  Vector& speed() { return speed_; }
 
  private:
-  Point* center_;
+  Point  center_;
   double radius_;
   double weight_;
-  Vector* speed_;
+  Vector speed_;
 }; // Puck
 #endif // TWO_WORLD_PUCK_H_

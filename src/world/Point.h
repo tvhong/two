@@ -20,8 +20,8 @@ class Point {
   // Possible convenient to relocate the Puck (possible ability?)
   // void set(double x, double y) {x_=x;y_=y;}
 
-  double x() { return x_; }
-  double y() { return y_; }
+  double x() const { return x_; }
+  double y() const { return y_; }
 
  private:
   double x_, y_;
