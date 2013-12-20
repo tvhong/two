@@ -9,3 +9,11 @@ Physics?
   complicated, but rewarding & overall better
   -> decided to follow physics
 
+Ability
+  no negative-buff on opponent's M
+  - reason: opponent's A can also have a buff
+    and they might overlap, which is annoying
+
+W-AM-A interaction:
+  World sends events to AM
+  AM call appropriate functions of As
