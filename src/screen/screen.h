@@ -1,5 +1,5 @@
-#ifndef TWO_ABILITY_ABILITY_H_
-#define TWO_ABILITY_ABILITY_H_
+#ifndef TWO_SCREEN_SCREEN_H_
+#define TWO_SCREEN_SCREEN_H_
 
 #include <stdint.h>
 #include "game.h"
@@ -17,3 +17,4 @@ class Screen {
   Game game_;
   virtual void init() = 0;
 }
+#endif // TWO_SCREEN_SCREEN_H_

@@ -2,8 +2,8 @@
   * \brief types of input events / what actions the players can do
   * \ingroup input
   */
-#ifndef HEADER_INPUT_HPP
-#define HEADER_INPUT_HPP
+#ifndef TWO_INPUT_INPUT_H_
+#define TWO_INPUT_INPUT_H_
 
 enum PlayerAction
 {
@@ -25,4 +25,4 @@ enum PlayerAction
 
   PA_ESCAPE
 };
-#endif
+#endif // TWO_INPUT_INPUT_H_
