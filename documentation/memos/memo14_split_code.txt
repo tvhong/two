@@ -1,0 +1,20 @@
+Game
+Input
+Graphic & sound
+Screen
+World
+Ability
+
+Core functionalities:
+  Game          -- S
+  MatchScreen   -- S
+  World         -- V-Code, S-Physics
+  Input         -- S
+  Graphic       -- V
+
+Suggesting time for basic functionalities:
+  2 weeks, well just.. as an 'expected milestone'
+
+To be done next meeting:
+  V - gets basic objs in the World done. Prob nothing on Graphic
+  S - the basic of the basics of loops
