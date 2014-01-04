@@ -5,7 +5,7 @@
 #define TWO_WORLD_WORLD_H_
 
 #include <stdint.h>
-#include <utility>
+//#include <utility>
 
 #include "input/input.h"
 
@@ -20,9 +20,9 @@ class World {
 
   void update(int64_t time);
 
-  // personally dislike using pair
-  // any alternative?
-  std::pair<int,int> numOfStars();
+  // Get the number of stars left of player 1 and player 2
+  int stars_p1();
+  int stars_p2();
 
   void processInput(PlayerAction pa);
 

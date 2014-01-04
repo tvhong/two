@@ -1,31 +1,29 @@
 /*
- *
+ * Class that represents a Puck
  */
+
 #ifndef TWO_WORLD_PUCK_H_
 #define TWO_WORLD_PUCK_H_
 
-#include "Point.h"
-#include "Vector.h"
 #include "CircleObject.h"
+#include "Point.h"
+#include "VectorMD.h"
 
 class Puck : public CircleObject {
  public:
-  // TODO: update MAX_SPEED & MIN_SPEED with more reasonable values
-  // when we get the game running
-  static const double MAX_SPEED;
-  static const double MIN_SPEED;
+  static const double MAX_SPEED = 7.0;
+  static const double MIN_SPEED = 1.0;
 
-  Puck(Point center, double radius);
+  Puck(Point& center, double radius, double weight) :
+    CircleObject(center.x(), center.y(), radius),
+    velocity_(), weight_(weight) {}
 
-  Point& center() { return center_; }
-  double radius() { return radius_; }
-  double weight() { return weight_; }
-  Vector& speed() { return speed_; }
+  double weight() const { return weight_; }
+  VectorMD velocity() const { return velocity_; }
 
  private:
-  Point  center_;
-  double radius_;
   double weight_;
-  Vector speed_;
+  VectorMD velocity_;
 }; // Puck
+
 #endif // TWO_WORLD_PUCK_H_

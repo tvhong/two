@@ -9,17 +9,14 @@
 
 class Star : public CircleObject {
  public:
-  Star(Point center, double radius);
-  Point& center() { return &center_; }
-  double radius() { return radius_; }
+  Star(Point& center, double radius, bool state) :
+    CircleObject(center.x(), center.y(), radius), state_(state){}
 
-  bool isOn()    { return state; }
-  bool turnOff() { state=false; }
-  bool turnOn()  { state=true; }
+  bool isOn() const { return state_; }
+  void turnOff() { state_=false; }
+  void turnOn() { state_=true; }
 
  private:
-  Point center_;
-  double radius_;
-  bool state;
+  bool state_;
 }; // Star
 #endif // TWO_WORLD_STAR_H_

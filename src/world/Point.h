@@ -7,7 +7,7 @@
 
 class Point {
  public:
-  Point(double x, double y);
+  Point(double x, double y) {x_ = x; y_ = y;}
 
   // CHANGE: from vector to dx & dy, shouldn't use vector
   // as we might have to modify the distance moved
@@ -15,11 +15,11 @@ class Point {
   // -> have to use a DISLOCATION Vector,
   // not a Speed Vector -> might be troublesome?
   // also note the extra unnecessary dependency
-  void move(double dx, double dy) {x_+=dx;y_+=dy;}
+  void move(double dx, double dy) {x_ += dx; y_ += dy;}
 
   // Possible convenient to relocate the Puck (possible ability?)
   // void set(double x, double y) {x_=x;y_=y;}
-
+  
   double x() const { return x_; }
   double y() const { return y_; }
 

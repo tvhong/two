@@ -14,6 +14,8 @@
 class Vector {
  public:
   // Cartesian coordinate, to update position
+  //double x() { return x_; }
+  //double y() { return y_; }
   virtual double x() = 0;
   virtual double y() = 0;
   
@@ -24,17 +26,19 @@ class Vector {
   virtual double direction() = 0;
 
   // Bounce from wall scenario
-  virtual void flipVertically() = 0;
-  virtual void flipHorizontally() = 0;
+  virtual void flip_vertical() = 0;
+  virtual void flip_horizontal() = 0;
 
   // Convenient for applying fiction
-  virtual void decreaseMagnitude(double delta) = 0;
+  virtual void decrease_magnitude(double delta) = 0;
 
   // Convenient for changing magnitude by a factor
-  virtual void multiplyMagnitude(double scalar) = 0;
+  virtual void multiply_magnitude(double scalar) = 0;
 
   // Ability can completely set new mag/dir
-  virtual void setMagnitude(double newMag) = 0;
-  virtual void setDirection(double newDir) = 0;
+  virtual void set_magnitude(double newMag) = 0;
+  virtual void set_direction(double newDir) = 0;
+ private:
+  double x_, y_;
 };
 #endif // TWO_WORLD_VECTOR_H_
