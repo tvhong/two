@@ -15,8 +15,8 @@ class Puck : public CircleObject {
   static const double MIN_SPEED = 1.0;
 
   Puck(Point& center, double radius, double weight) :
-    CircleObject(center.x(), center.y(), radius),
-    velocity_(), weight_(weight) {}
+      CircleObject(center.x(), center.y(), radius),
+      velocity_(), weight_(weight) {}
 
   double weight() const { return weight_; }
   VectorMD velocity() const { return velocity_; }

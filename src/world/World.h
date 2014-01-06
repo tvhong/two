@@ -5,31 +5,33 @@
 #define TWO_WORLD_WORLD_H_
 
 #include <stdint.h>
-//#include <utility>
-
+#include <vector>
+#include "Mallet.h"
+#include "Puck.h"
+#include "Star.h"
 #include "input/input.h"
+
 
 class World {
  public:
-  enum Terrain {
-    SAND
-  };
-  enum WallSide {
-    TOP, BOTTOM, LEFT, RIGHT
-  };
+  World(Terrain terrain);
+
+  Puck puck() const { return puck_; }
+  Mallet mallet_p1() const { return mallet_p1_; }
+  Mallet mallet_p2() const { return mallet_p2_; }
+  int nstars_p1() const { return stars_p1_.size(); }
+  int nstars_p2() const { return stars_p2_.size(); }
+  Terrain terrain() const { return terrain_; }
 
   void update(int64_t time);
-
-  // Get the number of stars left of player 1 and player 2
-  int stars_p1();
-  int stars_p2();
-
   void processInput(PlayerAction pa);
 
-  Puck puck();
-  Mallet mallet1();
-  Mallet mallet2();
-  // TODO Star list
-  Terrain terrain();
+ private:
+  Puck puck_;
+  Mallet mallet_p1_;
+  Mallet mallet_p2_;
+  std::vector<Star> stars_p1_;
+  std::vector<Star> stars_p2_;
+  Terrain terrain_;
 };
 #endif // TWO_WORLD_WORLD_H_

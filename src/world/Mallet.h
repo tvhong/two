@@ -10,13 +10,11 @@
 
 class Mallet : public CircleObject {
  public:
-  static const double DASH_SPEED = 3.0;
-  static const double BASE_SPEED = 3.0;
-
   Mallet(Point& center, double radius, double weight,
-         double base_speed, double max_ep) :
-    CircleObject(center.x(), center.y(), radius), velocity_(),
-    weight_(weight), base_speed_(base_speed), max_ep_(max_ep) {}
+         double base_speed, double dash_speed, double max_ep) :
+      CircleObject(center.x(), center.y(), radius), weight_(weight),
+      base_speed_(base_speed), dash_speed_(dash_speed),
+      velocity_(), max_ep_(max_ep), ep_(max_ep) {}
 
   double weight() const { return weight_; }
   VectorMD velocity() const { return velocity_; }
@@ -33,8 +31,9 @@ class Mallet : public CircleObject {
 
  private:
   double weight_;
-  double base_speed_;
   VectorMD velocity_;
+  double base_speed_;
+  double dash_speed_;
   double max_ep_;
   double ep_;
 };
