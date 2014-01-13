@@ -2,7 +2,7 @@
 
 #ifndef TWO_GAME_H_
 #define TWO_GAME_H_
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
 class Screen;
 class Game {

@@ -2,7 +2,6 @@
 
 #ifndef TWO_SCREEN_INITSCREEN_H_
 #define TWO_SCREEN_INITSCREEN_H_
-
 #include <stdint.h>
 #include <SFML/System.hpp>
 #include "screen.h"

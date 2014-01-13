@@ -1,4 +1,6 @@
-#include "screen\init_screen.h"
+#include "SFML/System.hpp"
+#include "SFML/Graphics.hpp"
+#include "screen/init_screen.h"
 #include "game.h"
 
 const int FPS = 60;

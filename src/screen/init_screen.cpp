@@ -1,3 +1,4 @@
+#include "SFML/Graphics.hpp"
 #include "init_screen.h"
 #include "../game.h"
 const int FLASHTIME = 10000;

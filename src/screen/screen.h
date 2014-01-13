@@ -3,7 +3,7 @@
 #define TWO_SCREEN_SCREEN_H_
 
 #include <stdint.h>
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
 class Game;
 class Screen {

@@ -1,2 +1,5 @@
 *.gch
 *.autosave
+*.swp
+*.o
+main
