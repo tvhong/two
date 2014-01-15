@@ -8,7 +8,7 @@ sf::Text* text;
 InitScreen::InitScreen(Game *game):Screen(game) {
   elapsedTime=0;
   sf::Font font;
-  if (!font.loadFromFile("comic.ttf"))
+  if (!font.loadFromFile("../fonts/comic.ttf"))
     exit(-1);
   text = new sf::Text("Hello SFML", font, 50);
 }
